@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+p.heading {
+    font-size: 24px;
+    font-weight: 1000;
+    color: #673AB7;
+}
+p.model__view {
+    font-size: 21px;
+}

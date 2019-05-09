@@ -1,0 +1,18 @@
+<!-- property Binding -->
+<p class="heading">Show image with the help of property binding</p>
+<img src="{{image}}" height="100" width="100">
+<img [src]="image" height="100" width="100">
+<img bind-src="image" height="100" width="100">
+<img src="{{displayimg()}}" height="100" width="100">
+<br/>
+
+<p class="heading">show value in console using event binding</p>
+<!-- Event Binding -->
+<label>Name: </label><input type="text" value="John Snow" (click)="showValue($event)">
+
+<br/>
+<p class="heading">Show value in p tag with help of Two way binding</p>
+<!-- Two way Binding -->
+<label>Name: </label><input type="text" value="John Snow" [(ngModel)]="showdata" />
+
+<p class="model__view"> show value of input :{{showdata}}</p>
