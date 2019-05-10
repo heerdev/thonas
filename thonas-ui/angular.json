@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "thonas-ui": {
+    "exapmle1": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/thonas-ui",
+            "outputPath": "dist/exapmle1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "../exapmle1/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -58,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "thonas-ui:build"
+            "browserTarget": "exapmle1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "thonas-ui:build:production"
+              "browserTarget": "exapmle1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "thonas-ui:build"
+            "browserTarget": "exapmle1:build"
           }
         },
         "test": {
@@ -103,7 +104,7 @@
         }
       }
     },
-    "thonas-ui-e2e": {
+    "exapmle1-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "thonas-ui:serve"
+            "devServerTarget": "exapmle1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "thonas-ui:serve:production"
+              "devServerTarget": "exapmle1:serve:production"
             }
           }
         },
@@ -132,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "thonas-ui"
+  "defaultProject": "exapmle1"
 }
